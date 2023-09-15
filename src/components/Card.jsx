@@ -10,7 +10,7 @@ function Card({ holderName, cardNumber, expMonth, expYear, cvc }) {
         <div className="absolute z-10 left-28 w-[30rem] top-20 flex flex-col gap-8">
             <div className=" h-60 bg-cover bg-no-repeat w-full rounded-lg bg-[url('./assets/card.png')] shadow-lg">
                 <div className="flex flex-col justify-end h-full pb-8 gap-6 px-6">
-                    <div className="w-full flex gap-8">
+                    <div className="w-full flex gap-5">
                         {formatCardNumber(cardNumber).map((group, index) => (
                             <p key={index} className="text-white font-semibold text-2xl tracking-[0.5rem]">
                                 {group}
